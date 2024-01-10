@@ -1,0 +1,37 @@
+.photo-grid-container
+{
+    width: 940px;
+}
+
+.PHOTO-GRID
+{
+    display: grid;
+    grid-template-columns: 309px 309px 309px;
+    grid-template-rows: 309px 309px 309px;
+    column-gap: 3px;
+    row-gap: 3px;
+}
+
+.grid-photo
+{
+    object-fit: cover; 
+    /*ideally, the img will fit here (cropped to fit the square dimensions*/
+    width: 309px;
+    height: 309px; 
+}
+
+.img-container
+{
+    position: relative; /*so i can position the carousel icon on top of each photo */
+}
+.carousel-icon
+{
+    position: absolute;
+    z-index: 2; /*in front of the pic */
+    top: 10px; right: 10px;
+}
+.carousel-pic
+{
+    height: 16px; width: 16px;
+    filter: invert(1);
+}
