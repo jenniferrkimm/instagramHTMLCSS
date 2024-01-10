@@ -1,0 +1,165 @@
+.profile-info-whole-container
+{
+    height: 300px;
+    border: 1px solid red;
+    margin-bottom:5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+}
+
+
+.my-profile-flex
+{
+    display: flex;
+    margin-left: 40px;
+}
+.my-profile-flex > div
+{
+    padding: 5px;
+}
+.profile-pic-container
+{
+    width: 150px;
+    margin-right: 90px;
+}
+    .profile-pic
+    {
+        width: 100%;
+        border-radius: 50%;
+    }
+
+.my-info-container
+{
+    width: 400px; height: 150px;
+    border: 1px solid black;
+    /* height: 150px; */
+}
+.my-info-container > div, .my-info-container > p 
+{
+    margin-top: 15px;
+}
+    .username-editprofile-etc-flex
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+        .username
+        {
+            font-size:20px;
+        }
+        .profile-archive-buttons
+        {
+            /* rgba bc when button is active, like it gets more transparent */
+            background-color: rgba(230, 230, 230, 1);
+            color:rgba(0,0,0,1);
+
+            border: none; border-radius: 4px;
+            padding: 7px 9px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+            .profile-archive-buttons:hover
+            {
+                background-color: rgb(213, 213, 213);
+            }
+            .profile-archive-buttons:active
+            {
+                background-color: rgba(213, 213, 213, .5);
+                color:rgba(0,0,0,.5);
+            }  
+        .settings-icon
+        {
+            cursor: pointer;
+            height:30px;
+        }
+        .settings-icon:hover
+        {
+            transform: rotate(30deg);
+        }
+    .numbers-flex
+    {
+        display: flex;
+        width: 300px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .numbers-flex p > span
+    {
+        font-weight: 700;
+    }
+    
+    .img-flex
+    {
+        display: flex;
+        align-items: center;
+    }
+        .link-icon
+        {
+            height:15px;
+        }
+        .link
+        {
+            font-weight: 500;
+            font-size: smaller;
+            text-decoration: none;
+            color: rgb(38, 84, 131);
+        }
+            .link:hover
+            {
+                text-decoration: underline;
+            }
+
+
+
+.highlights-section-whole-container
+{
+    height:100px;
+    margin-left: 20px;
+}
+.highlights-flex
+{
+    display: flex;
+}
+    .highlights
+    {
+        height: 100%; 
+        padding: 5px;
+    /* so the highlight circle icon and the text are aligned */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+        .highlight-icon
+        {
+            background-color:rgba(246, 246, 246);
+            height:76px; width: 76px;
+            border-radius: 50%;
+
+            /* create 2 borders where inner border is white and outer border is grey */
+            box-shadow: inset 0 0 0 2px white;
+            padding: 2px;
+            border:1px solid rgb(206, 206, 206);            
+        }
+            .highlight-icon:hover
+            {
+                background-color:rgba(234, 234, 234, 0.6);
+                cursor: pointer;
+            }
+        .highlight-photo
+        {
+            width: 70.5px; height: 70.5px;
+            object-fit: cover;
+            border-radius: 50%;
+            cursor: pointer;
+
+            /* create 2 borders where inner border is white and outer border is grey */
+            border: 1px solid rgb(206, 206, 206);
+            padding: 2px; /* for some reason, inset box-shadow does not work BUT this does so yay */
+        }
+        .highlight-description
+        {
+            margin-top:5px;
+            font-size: small; font-weight:500;
+        }

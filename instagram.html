@@ -4,10 +4,68 @@
         <title>Instagram</title>
         <link rel="stylesheet" type="text/css" href="styles/photo.css">
         <link rel="stylesheet" type="text/css" href="styles/general.css">
-
+        <link rel="stylesheet" type="text/css" href="styles/profile.css">
+    <!-- imorting ROBOTO google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     </head>
 
     <body>
+        <div class="profile-info-whole-container">
+            <div class="my-profile-flex" style="">
+                <div class="profile-pic-container">
+                    <img src="photos/profilePic.jpeg" class="profile-pic" alt="me">
+                </div>
+                <div class="my-info-container">
+                    <div class="username-editprofile-etc-flex">
+                        <p class="username">jenniferrkimm</p>
+                        <button class="profile-archive-buttons"> Edit profile</button>
+                        <button class="profile-archive-buttons">View Archive</button>
+                        <img src="icons/settings.png" class="settings-icon" alt="settings" title="Options">
+                    </div>
+                    <div class="numbers-flex">
+                        <!-- use <span> to target specific like things within an element-->
+                        <p> <span>6</span> posts</p>
+                        <p> <span>x,xxx</span> followers </p>
+                        <p> <span>xxx</span> following </p>
+                    </div>
+                    <p style="font-weight:500;">jennifer kim </p>
+                    <div class="img-flex"> <!-- so i can center the img pic and the link-->
+                        <img src="icons/link.png" class="link-icon">
+                        <a href="https://vsco.co/jenniferek" class="link" target="_blank"> vsco.co/jenniferek</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="highlights-section-whole-container" style="border:1px solid blue;">  <!-- i dont have any hightlights tho lol-->
+                <div class="highlights-flex">
+                    <div class="highlights">
+                        <button class="highlight-icon">
+                            <p style="color: grey;">+</p>
+                        </button>
+                        <p class="highlight-description">New</p>
+                    </div>
+                    <div class="highlights">
+                        <img src="photos/highlight.png" class="highlight-photo" alt="highlight photo">
+                        <p class="highlight-description">Highlights</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="posts-saved-tagged-flex">
+            <div class="posts-saved-tagged">
+                
+            </div>
+            <div class="posts-saved-tagged">
+                
+            </div>
+            <div class="posts-saved-tagged">
+                
+            </div>
+        </div>
+    <!-- photo grid itself-->
         <div class="photo-grid-container">
             <div class="PHOTO-GRID">
                 <div class="img-container">

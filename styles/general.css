@@ -3,9 +3,10 @@ body
     padding-left:30px;
     padding-top: 30px;
     padding-bottom: 932px;
+    font-family: 'roboto','arial';
 }
 
-div
+div, p, body, img
 {
     margin:0;
 }
