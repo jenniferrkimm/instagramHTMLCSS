@@ -1,12 +1,26 @@
 body
 {
-    padding-left:30px;
+    /* padding-left:30px; padding-right: 30px; */
     padding-top: 30px;
-    padding-bottom: 932px;
+    padding-bottom: 300px;
     font-family: 'roboto','arial';
 }
 
 div, p, body, img
 {
     margin:0;
+}
+
+main
+{
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media (max-width: 900px)
+{
+    main
+    {
+        margin-left: 10px; margin-right: 10px;
+    }
 }

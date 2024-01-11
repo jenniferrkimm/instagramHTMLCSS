@@ -1,13 +1,13 @@
-.photo-grid-container
+/* .photo-grid-container
 {
-    width: 940px;
-}
+    width: 938px;    do i need this if i alr constricted <main> to 938??
+} */
 
 .PHOTO-GRID
 {
     display: grid;
-    grid-template-columns: 309px 309px 309px;
-    grid-template-rows: 309px 309px 309px;
+    grid-template-columns: 1fr 1fr 1fr; /*og had hard vals, but with <main> width of 938px, doing 1fr 1fr 1fr evenly distributes inside the container of width 938px */
+    grid-template-rows: 310.667px 310.667px;
     column-gap: 3px;
     row-gap: 3px;
 }
@@ -16,8 +16,8 @@
 {
     object-fit: cover; 
     /*ideally, the img will fit here (cropped to fit the square dimensions*/
-    width: 309px;
-    height: 309px; 
+    width: 100%;
+    height: 100%; 
 }
 
 .img-container

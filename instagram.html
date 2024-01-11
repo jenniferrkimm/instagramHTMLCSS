@@ -5,6 +5,7 @@
         <link rel="stylesheet" type="text/css" href="styles/photo.css">
         <link rel="stylesheet" type="text/css" href="styles/general.css">
         <link rel="stylesheet" type="text/css" href="styles/profile.css">
+        <link rel="stylesheet" type="text/css" href="styles/footer.css">
     <!-- imorting ROBOTO google font-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,99 +13,131 @@
     </head>
 
     <body>
-        <div class="profile-info-whole-container">
-            <div class="my-profile-flex" style="">
-                <div class="profile-pic-container">
-                    <img src="photos/profilePic.jpeg" class="profile-pic" alt="me">
-                </div>
-                <div class="my-info-container">
-                    <div class="username-editprofile-etc-flex">
-                        <p class="username">jenniferrkimm</p>
-                        <button class="profile-archive-buttons"> Edit profile</button>
-                        <button class="profile-archive-buttons">View Archive</button>
-                        <img src="icons/settings.png" class="settings-icon" alt="settings" title="Options">
+        <main style="border:1px solid cyan;">
+            <div class="profile-info-whole-container">
+                <div class="my-profile-flex" style="">
+                    <div class="profile-pic-container">
+                        <img src="photos/profilePic.jpeg" class="profile-pic" alt="me">
                     </div>
-                    <div class="numbers-flex">
-                        <!-- use <span> to target specific like things within an element-->
-                        <p> <span>6</span> posts</p>
-                        <p> <span>x,xxx</span> followers </p>
-                        <p> <span>xxx</span> following </p>
-                    </div>
-                    <p style="font-weight:500;">jennifer kim </p>
-                    <div class="img-flex"> <!-- so i can center the img pic and the link-->
-                        <img src="icons/link.png" class="link-icon">
-                        <a href="https://vsco.co/jenniferek" class="link" target="_blank"> vsco.co/jenniferek</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="highlights-section-whole-container" style="border:1px solid blue;">  <!-- i dont have any hightlights tho lol-->
-                <div class="highlights-flex">
-                    <div class="highlights">
-                        <button class="highlight-icon">
-                            <p style="color: grey;">+</p>
-                        </button>
-                        <p class="highlight-description">New</p>
-                    </div>
-                    <div class="highlights">
-                        <img src="photos/highlight.png" class="highlight-photo" alt="highlight photo">
-                        <p class="highlight-description">Highlights</p>
+                    <div class="my-info-container" style="border: 1px solid blue;">
+                        <div class="username-editprofile-etc-flex">
+                            <p class="username">jenniferrkimm</p>
+                            <button class="profile-archive-buttons"> Edit profile</button>
+                            <button class="profile-archive-buttons">View Archive</button>
+                            <img src="icons/settings.png" class="settings-icon" alt="settings" title="Options">
+                        </div>
+                        <div class="numbers-flex">
+                            <!-- use <span> to target specific like things within an element-->
+                            <p> <span>6</span> posts</p>
+                            <p> <span>x,xxx</span> followers </p>
+                            <p> <span>xxx</span> following </p>
+                        </div>
+                        <p style="font-weight:500;">jennifer kim </p>
+                        <div class="img-flex"> <!-- so i can center the img pic and the link-->
+                            <img src="icons/link.png" class="link-icon">
+                            <a href="https://vsco.co/jenniferek" class="link" target="_blank"> vsco.co/jenniferek</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="posts-saved-tagged-flex">
-            <div class="posts-saved-tagged">
-                
-            </div>
-            <div class="posts-saved-tagged">
-                
-            </div>
-            <div class="posts-saved-tagged">
-                
-            </div>
-        </div>
-    <!-- photo grid itself-->
-        <div class="photo-grid-container">
-            <div class="PHOTO-GRID">
-                <div class="img-container">
-                    <img src="photos/pic1.jpeg" class="grid-photo" alt="disney" title="disney">
-                    <div class="carousel-icon">
-                        <img src="icons/carousel.png" class="carousel-pic">
-                    </div>
-                </div>
-                <div class="img-container">
-                    <img src="photos/pic2.jpeg" class="grid-photo" alt="hawaii" title="hawaii">
-                    <div class="carousel-icon">
-                        <img src="icons/carousel.png" class="carousel-pic">
-                    </div>
-                </div>
-                <div class="img-container">
-                    <img src="photos/pic3.jpeg" class="grid-photo" alt="hike" title="hike">
-                    <div class="carousel-icon">
-                        <img src="icons/carousel.png" class="carousel-pic">
-                    </div>
-                </div>
-                <div class="img-container">
-                    <img src="photos/pic4.jpeg" class="grid-photo" alt="denver" title="denver">
-                    <div class="carousel-icon">
-                        <img src="icons/carousel.png" class="carousel-pic">
-                    </div>
-                </div>
-                <div class="img-container">
-                    <img src="photos/pic5.jpeg" class="grid-photo" alt="korea" title="korea">
-                    <div class="carousel-icon">
-                        <img src="icons/carousel.png" class="carousel-pic">
-                    </div>
-                </div>
-                <div class="img-container">
-                    <img src="photos/pic6.jpeg" class="grid-photo" alt="sf" title="sf">
-                    <div class="carousel-icon">
-                        <img src="icons/carousel.png" class="carousel-pic">
+    
+                <div class="highlights-section-whole-container">  <!-- i dont have any hightlights tho lol but i just added one called "Highlights"-->
+                    <div class="highlights-flex">
+                        <div class="highlights">
+                            <button class="highlight-icon">
+                                <p style="color: grey;">+</p>
+                            </button>
+                            <p class="highlight-description">New</p>
+                        </div>
+                        <div class="highlights">
+                            <img src="photos/highlight.png" class="highlight-photo" alt="highlight photo">
+                            <p class="highlight-description">Highlights</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+    
+        <!-- posts saved tagged section-->
+            <div class="posts-saved-tagged-container">
+                <div class="posts-saved-tagged-flex">
+                    <div class="posts-saved-tagged" style="border-top: 1px solid black;"> <!-- need this style to signify im on "posts"-->
+                        <img src="icons/grid.png" class="pst-icon">
+                        <p style="color:black;">POSTS</p>
+                    </div>  
+                    <div class="posts-saved-tagged" style="border-top:1px solid rgba(0,0,0,0)"> <!-- but i need SAVED & TAGGED on same vertical pos as POSTS, so transparent border-top-->
+                        <img src="icons/saved.png" class="pst-icon">
+                        <p>SAVED</p>                
+                    </div>
+                    <div class="posts-saved-tagged"  style="border-top:1px solid rgba(0,0,0,0)">
+                        <img src="icons/tagged.png" class="pst-icon">
+                        <p>TAGGED</p>                
+                    </div>
+                </div>
+            </div>
+    
+        <!-- photo grid itself-->
+            <div class="photo-grid-container">
+                <div class="PHOTO-GRID">
+                    <div class="img-container">
+                        <img src="photos/pic1.jpeg" class="grid-photo" alt="disney" title="disney">
+                        <div class="carousel-icon">
+                            <img src="icons/carousel.png" class="carousel-pic">
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="photos/pic2.jpeg" class="grid-photo" alt="hawaii" title="hawaii">
+                        <div class="carousel-icon">
+                            <img src="icons/carousel.png" class="carousel-pic">
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="photos/pic3.jpeg" class="grid-photo" alt="hike" title="hike">
+                        <div class="carousel-icon">
+                            <img src="icons/carousel.png" class="carousel-pic">
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="photos/pic4.jpeg" class="grid-photo" alt="denver" title="denver">
+                        <div class="carousel-icon">
+                            <img src="icons/carousel.png" class="carousel-pic">
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="photos/pic5.jpeg" class="grid-photo" alt="korea" title="korea">
+                        <div class="carousel-icon">
+                            <img src="icons/carousel.png" class="carousel-pic">
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img src="photos/pic6.jpeg" class="grid-photo" alt="sf" title="sf">
+                        <div class="carousel-icon">
+                            <img src="icons/carousel.png" class="carousel-pic">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        <!-- footer -->
+            <footer>
+                <div style="margin-top:20px;">
+                    <p>Meta</p>
+                    <p>About</p>
+                    <p>Blog</p>
+                    <p>Jobs</p>
+                    <p>Help</p>
+                    <p>API</p>
+                    <p>Privacy</p>
+                    <p>Terms</p>
+                    <p>Locations</p>
+                    <p>Instagram Lite</p>
+                    <p>Threads</p>
+                    <p>Contact Uploading & Non-Users</p>
+                    <p>Meta Verified</p>
+                </div>
+                <div class="language-copyright">
+                    <p>English</p>
+                    <p> &copy; 2024 Instagram from Meta</p>
+                </div>
+            </footer>
+        </main>
     </body>
 </html>

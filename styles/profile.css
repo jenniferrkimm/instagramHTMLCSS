@@ -1,8 +1,7 @@
 .profile-info-whole-container
 {
-    height: 300px;
-    border: 1px solid red;
-    margin-bottom:5px;
+    height: 400px; 
+    border-bottom: 1px solid grey;
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 20px;
@@ -31,9 +30,8 @@
 
 .my-info-container
 {
-    width: 400px; height: 150px;
-    border: 1px solid black;
-    /* height: 150px; */
+    /* width: 400px; height: 150px; */
+    flex:1;
 }
 .my-info-container > div, .my-info-container > p 
 {
@@ -42,8 +40,11 @@
     .username-editprofile-etc-flex
     {
         display: flex;
-        justify-content: space-between;
         align-items: center;
+    }
+    .username-editprofile-etc-flex > *:not(:first-child)
+    {
+        margin-left:10px;
     }
         .username
         {
@@ -116,7 +117,8 @@
 .highlights-section-whole-container
 {
     height:100px;
-    margin-left: 20px;
+    margin-left: 20px; margin-right: 20px;
+    padding-bottom:40px;
 }
 .highlights-flex
 {
@@ -163,3 +165,33 @@
             margin-top:5px;
             font-size: small; font-weight:500;
         }
+    
+.posts-saved-tagged-container
+{
+    display: flex;
+    justify-content: center; /* so the posts saved tagged thing itself is centered on screen */
+    height: 60px;
+}
+    .posts-saved-tagged-flex
+    {
+        /* border: 1px solid orange; */
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+    }
+    .posts-saved-tagged
+    {
+        display: flex;
+        align-items: center;
+    }
+        .posts-saved-tagged p
+        {
+            margin-left:5px;
+            font-size: 14px; letter-spacing: 1px;
+            font-weight:500;
+            color: rgb(121, 121, 121);
+        }
+    .pst-icon
+    {
+        height: 13px;
+    }

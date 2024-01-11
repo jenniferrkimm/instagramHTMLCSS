@@ -1,0 +1,25 @@
+footer div
+{
+    display:flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+footer p
+{
+    color: grey;
+    margin-right:10px; margin-left: 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+    footer p:hover
+    {
+        text-decoration: underline;
+        text-decoration-color: black;
+    }
+    footer p:active
+    {
+        text-decoration: underline;
+        text-decoration-color: black;
+        color: hotpink;
+    }
