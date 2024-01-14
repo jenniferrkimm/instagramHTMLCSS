@@ -1,6 +1,5 @@
 .sidebar-container
 {
-    width: 76px;
     position: fixed;
     left:0; top:0; bottom: 0;
     border-right:1px solid grey;
@@ -9,7 +8,6 @@
     {
         display: flex; flex-direction: column;
         justify-content: center;
-        align-items: center;
     }
         .ig-icon
         {
@@ -51,34 +49,5 @@
 {
     transform:rotate(15deg);
 }
-.tooltip-container
-{
-    position: relative;
-    cursor: pointer;
-    z-index: 4;
-}
-    .tooltip
-    {
-        background-color:white;
-        padding: 5px;
-        box-shadow: 0 0 5px grey;
-        border-radius:3px;
 
-        position: absolute;
-        white-space: nowrap;
-        left: 50px;
-        top: 3px;
 
-        pointer-events: none;
-        transition-property: opacity, visibility;
-        transition-duration: .3s, .3s;
-        transition-delay: 0s, 1s; /* 1s delay until tooltip shows up, but once ur not hovering, it disappears right away */
-        opacity: 0;
-        visibility: hidden;
-        /* transition-delay: 3s;      for some reason this controls both the delay of it appearing and dissapearing*/
-    }
-    .tooltip-container:hover .tooltip
-    {
-        opacity: 1;
-        visibility:visible;
-    }
