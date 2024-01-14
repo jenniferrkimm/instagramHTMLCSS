@@ -20,7 +20,14 @@ main
      padding-left: 76px; 
     transition: margin .3s;
 }
-
+@media (min-width: 0px) and (max-width:860px)
+{
+    footer
+    {
+        /* visibility: hidden;     <- hidden but still occupy space in the layout */
+        display: none;  /*disappear and not affect the layout when the screen is smaller */
+    }
+}
 @media (min-width: 0px) and (max-width: 1030px) /* <main> proportionally scaled w screen size. help ig uses flex for photo layout but i used grid so i cant easily control the height to keep it square but oh well! mine is unique ig!*/
 {
     main
