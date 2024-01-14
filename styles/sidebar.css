@@ -1,0 +1,84 @@
+.sidebar-container
+{
+    width: 76px;
+    position: fixed;
+    left:0; top:0; bottom: 0;
+    border-right:1px solid grey;
+}
+    .sidebar-icons-flex
+    {
+        display: flex; flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        .ig-icon
+        {
+            margin-top:30px; margin-bottom: 50px;
+            width: 27px;
+        }
+        .home-icon
+        {
+            width: 38px;
+        }
+        .search-icon
+        {
+            width:30px;
+            margin-left:2px;
+        }
+        .explore-icon, .propic-icon
+        {
+            width:36px;
+        }
+        .reels-icon, .heart-icon, .post-icon
+        {
+            width: 34px; 
+        }
+        .messages-icon, .threads-icon, .hamburger-icon
+        {
+            width:30px;
+        }
+    /* lowkey unecessary way of doing this BUT i practice the selectors */
+    .sidebar-icons-flex :not(:first-child):not(:nth-last-child(3))
+    {
+        margin-bottom: 25px;
+    }
+    .propic-icon
+    {
+        margin-bottom: 50px;
+    }
+
+.tooltip-container:hover img
+{
+    transform:rotate(15deg);
+}
+.tooltip-container
+{
+    position: relative;
+    cursor: pointer;
+    z-index: 4;
+}
+    .tooltip
+    {
+        background-color:white;
+        padding: 5px;
+        box-shadow: 0 0 5px grey;
+        border-radius:3px;
+
+        position: absolute;
+        white-space: nowrap;
+        left: 50px;
+        top: 3px;
+
+        pointer-events: none;
+        transition-property: opacity, visibility;
+        transition-duration: .3s, .3s;
+        transition-delay: 0s, 1s; /* 1s delay until tooltip shows up, but once ur not hovering, it disappears right away */
+        opacity: 0;
+        visibility: hidden;
+        /* transition-delay: 3s;      for some reason this controls both the delay of it appearing and dissapearing*/
+    }
+    .tooltip-container:hover .tooltip
+    {
+        opacity: 1;
+        visibility:visible;
+    }

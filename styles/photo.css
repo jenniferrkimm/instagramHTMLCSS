@@ -1,7 +1,7 @@
-/* .photo-grid-container
+.photo-grid-container
 {
-    width: 938px;    do i need this if i alr constricted <main> to 938??
-} */
+    max-width: 938px;    /* do i need this if i alr constricted <main> to 938?? */
+}
 
 .PHOTO-GRID
 {
