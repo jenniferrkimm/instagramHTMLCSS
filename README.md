@@ -1,2 +1,3 @@
 # Instagram
-I cloned instagram.com's profile interface using HTML and CSS. JavaScript functionality coming soon!
+I cloned my profile interface on instagram.com using HTML and CSS
+
