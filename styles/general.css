@@ -13,14 +13,31 @@ div, p, body, img
 
 main
 {
-    width: 80%;
+    width: 955px;
+    height: 884px;
     margin: 0 auto;
+
+     padding-left: 76px; 
+    transition: margin .3s;
 }
 
-@media (max-width: 900px)
+@media (min-width: 1031px) and (max-width: 1260px) /* default */
 {
     main
     {
-        margin-left: 10px; margin-right: 10px;
+        border: 1px solid red;
     }
-}
+} 
+@media (min-width: 790px) and (max-width: 1030px) /* default */
+{
+    main
+    {
+        border: 1px solid cyan;
+        width: 90%; height: 90%;
+    }
+    .PHOTO-GRID
+    {
+        grid-template-rows: 1fr 1fr;
+    }
+} 
+

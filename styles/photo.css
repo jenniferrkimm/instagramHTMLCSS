@@ -1,6 +1,7 @@
 .photo-grid-container
 {
     max-width: 938px;    /* do i need this if i alr constricted <main> to 938?? */
+    margin: 0 auto; /* center photo grid in the main container */
 }
 
 .PHOTO-GRID
